@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+             background-color: #d6cccc;
+            background: rgb(200,200,200);
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,190,143,0.5685924027814251) 8%, rgba(193,0,255,0.3641106100643382) 95%);
+            
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(242, 239, 239, 0.411); 
+            z-index: -1;
+        }
+         .login-container {
+            background-color: rgb(236, 223, 214);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 30);
+            width: 300px;
+            height: 500px;
+            /* background-image:url("singup.jpg"); */
+    
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #040404;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: rgb(38, 100, 222);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight:bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button-group .b1{
+            background-color: rgb(219, 32, 32);
+        }
+        .button-group .b1:hover {
+            background-color: rgb(255, 0, 0);
+            transform: scale(1.1);
+        }
+        .button-group button:hover {
+            background-color: rgb(12, 9, 234);
+            transform: scale(1.1);
+        }
+        .extra-links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .extra-links a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .extra-links a:hover {
+            text-decoration: underline;
+        }
+        .button-group a{
+            text-decoration: none;
+            color:white ;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    	<div style="display: flex;justify-content: center;align-self: center;margin-top: 40px;">
+            <img style="height: 100px;width: 100px;"src="logo3-removebg-preview.png">
+            </div>
+        <h2>Login</h2>
+        <form action="LoginServlet" method="post">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="button-group">
+                <button type="submit">Login</button>
+                <button class="b1" type="submit"><a href="index.html">Close</a></button>
+            </div>
+        </form>
+        <div class="extra-links">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+        
+    </div>
+</body>
+</html>

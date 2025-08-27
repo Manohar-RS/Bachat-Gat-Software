@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving_group_project</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img style="height: 60px;width: 80px;" src="logo3-removebg-preview.png" alt=""></div>
+        <nav>
+            <ul class="navitem">
+                <li><a href="login.html">
+                        <h5>Home</h5>
+                    </a></li>
+                <li><a href="about.html">
+                        <h5>About Us</h5>
+                    </a></li>
+                <li><a href="services.html">
+                        <h5>Services</h5>
+                    </a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn ">
+                            <h5>Contact Us</h5>
+                        </a>
+                        <!-- <div class="dropdown"> -->
+                        <div class="dropdownContent">
+                            <h5>Pragati Mahila Bachat Gat<br>Mob no : +91 9766179945</h5>
+                        </div>
+                    </div>
+                </li>
+                <div class="dropdown">
+            </ul>
+        </nav>
+        <style>
+         .login {
+            padding: 10px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: rgb(240, 153, 40);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+        }
+
+        .login a {
+            text-decoration: none;
+            color:white;
+        }
+        </style> 
+        <div class="button" >
+            <button class="login"><a href="signup.html"> Sign Up</a></button>
+            <button class="login" ><a href="login.html">Log in</a></button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h2>STEPS TO USE</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="icon">📷</div>
+                    <div class="text">
+                        <h3>1. Make <span class="highlight">profile</span></h3>
+                        <p>Create a profile of your own or shop.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="icon">🔍</div>
+                    <div class="text">
+                        <h3>2. <span class="highlight">Enter Data</span></h3>
+                        <p>Enter your data of savings & expenditure.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="icon">📊</div>
+                    <div class="text">
+                        <h3>3. Analyze Report</h3>
+                        <p>Use filters and analyze the stored data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="illustration">
+            <img src="illustration-removebg-preview.png" alt="Illustration">
+        </div>
+    </section>
+
+    <div class="container1">
+        <div class="card red">
+            <div class="top-section">
+
+            </div>
+            <div class="content">
+                <h2>Personal Loan</h2>
+                <p>Get a loan with easy EMI options and low interest rates.</p>
+                <!-- <button class="btn">Apply Now</button> -->
+            </div>
+        </div>
+
+        <div class="card purple">
+            <div class="top-section">
+                <!-- <img src="saving.jpg" alt=""> -->
+            </div>
+            <div class="content">
+                <h2>Saving</h2>
+                <p>Pay yourself first by setting aside a percentage of your income for savings before anything
+                    else.</p>
+                <!-- <button class="btn">Learn More</button> -->
+            </div>
+        </div>
+        <div class="card green">
+            <div class="top-section">
+
+            </div>
+            <div class="content">
+                <h2>Installments</h2>
+                <p> Installment loans are a common form of credit and might already be part of your financial toolkit.
+                </p>
+                <!-- <button class="btn">Apply Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @media (max-width: 768px) {
+            .container1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .illustration {
+                /* background: #000; */
+                margin-left: 180px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .hero {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .login-btn {
+                height: 50px;
+                /* font-size: 10px; */
+                width: 200px;
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 70px;
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .logo img {
+                height: 5px;
+                width: 5px;
+                margin-right: 0px;
+            }
+
+            .navitem li h5 {
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                font-size: 15px;
+
+            }
+        }
+
+        .container1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .navitem h5 {
+            font-size: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+
+            width: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .top-section {
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            background-image: url(saving.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 200px;
+
+
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            padding: 0 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Red Card */
+        .red .top-section {
+            background: red;
+            background-image: url(loan.jpg);
+            background-size: cover;
+            background-position: center;
+
+            width: 400px;
+            height: 200px;
+
+
+        }
+
+        .green .top-section {
+            background: red;
+            background-image: url(Installment\ \(1\).jpg);
+            background-size: cover;
+            background-position: center;
+
+            width: 400px;
+            height: 200px;
+
+
+        }
+
+        .red .btn {
+            background: rgb(241, 173, 106);
+        }
+
+        .green .btn {
+            background: rgb(241, 173, 106);
+        }
+
+        /* Purple Card */
+        .purple .top-section {
+            /* background: purple; */
+
+        }
+
+        .purple .btn {
+            background: rgb(241, 173, 106);
+        }
+    </style>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section about">
+                <h3>About</h3>
+                <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our
+                    site
+                    for your convenience. Hope you like it.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="login.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="footer-section services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mern Project</a></li>
+                    <li><a href="#">Online Classes</a></li>
+                    <li><a href="#">YouTube Course</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Have a Question?</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Loni, India</li>
+                    <li><i class="fas fa-phone"></i> +91 8149249945</li>
+                    <li><i class="fas fa-envelope"></i> manohersonawane@gmail.com</li>
+                    <li><i class="fas fa-envelope"></i> nikitasonawane0407@gmail.com</li>                    
+                    <li><i class="fas fa-envelope"></i> sanapRohan@gmail.com</li>
+                    <li><i class="fas fa-envelope"></i> shirsath shradha@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-message-3-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2022 All rights reserved | This website is made with ❤️ by Sonawane nikita,Sonawane
+                Manoher,Sanap Rohan,Shirsath Shradha</p>
+        </div>
+    </footer>
+    <style>
+        @media (max-width: 768px) {
+            footer {
+                width: fit-content;
+                overflow: hidden;
+            }
+        }
+
+
+
+        .dropdown {
+            position: relative;
+            /* display: inline-block; */
+            /* justify-content: cenmter;
+            align-items: center; */
+            margin-top: -40px;
+
+
+        }
+
+        .dropdown .dropbtn {
+            /* background-color: #f9f9f9;
+            border: 1px solid #ccc; */
+            padding-left: 10px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 40px;
+            /* justify-content: space-between; */
+        }
+
+        .dropbtn i {
+            padding-left: 65px;
+            font-size: 25px;
+
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+        }
+
+        .dropdownContent h5 {
+            font-weight: 400;
+        }
+
+        .dropdownContent {
+            display: none;
+
+            position: absolute;
+            background-color: white;
+            width: 270px;
+            border: 1px solid #ccc;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown:hover .dropdownContent {
+            display: block;
+        }
+
+        .dropdownContent a {
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-weight: 300;
+        }
+
+        .dropdownContent a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 70px;
+
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .logo span {
+            color: rgb(241, 173, 106);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+
+        .button {
+            gap: 20px;
+            width: 15%;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-btn {
+            background: rgb(236, 165, 89);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background: linear-gradient(to right, #eb9f48ae, #e69f35fb);
+            color: white;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .steps {
+            margin-top: 20px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .icon {
+            font-size: 30px;
+            background: white;
+            color: red;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .text h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .highlight {
+            /* background: navy; */
+            color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .illustration img {
+            width: 500px;
+            height: 500px;
+            padding-right: 200px;
+        }
+
+        .footer {
+            background-color: #4f3501;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 22%;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            color: #bbb;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        /* Social Media Icons */
+        .social-media {
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: #bbb;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .social-media a:hover {
+            color: white;
+        }
+
+        /* Copyright */
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
+</body>
+
+</html>

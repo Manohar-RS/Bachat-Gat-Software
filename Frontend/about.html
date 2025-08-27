@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us - Saving Group Management System</title>
+    <style>
+        .dropdown {
+            position: relative;
+            margin-top: -40px;
+        }
+
+        .dropdown .dropbtn {
+            padding-left: 10px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        .dropbtn i {
+            padding-left: 65px;
+            font-size: 25px;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+        }
+
+        .dropdownContent h5 {
+            font-weight: 400;
+        }
+
+        .dropdownContent {
+            display: none;
+
+            position: absolute;
+            background-color: white;
+            width: 270px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown:hover .dropdownContent {
+            display: block;
+        }
+
+        .dropdownContent a {
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-weight: 300;
+        }
+
+        .dropdownContent a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: #ddd;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+
+        .dropdown-menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .logo span {
+            color: rgb(241, 173, 106);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-right: 400px;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: linear-gradient(to right, #eb9f48ae, #e69f35fb);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            color: #35424a;
+        }
+
+        .about h3 {
+            color: #35424a;
+            margin-top: 20px;
+        }
+
+        .about ul {
+            color: black;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4f3501;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="dashboard.html"><img style="height: 60px;width: 80px;" src="logo3-removebg-preview.png"
+                    alt=""></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn ">Contact Us</a>
+                        <div class="dropdownContent">
+                            <h5>** Pragati Mahila Bachat Gat **<br>Mob no : +91 9766179945</h5>
+                            
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to the Saving Group Management System! Our mission is to empower communities by providing a
+                platform that facilitates savings, investment, and financial education. We believe in fostering
+                collaboration and trust among members to achieve their financial goals together. Join us in building a
+                brighter financial future!</p>
+
+            <h3>Our Vision</h3>
+            <ul>
+                <li>To create a sustainable and inclusive financial ecosystem where every member can thrive.</li>
+                <li>We aim to promote financial literacy and responsible saving habits within communities.</li>
+            </ul>
+
+            <h3>Our Mission</h3>
+            <ul>
+                <li>To provide a user-friendly platform that simplifies group savings and investment processes.</li>
+                <li>To enhance member engagement through educational resources and support.</li>
+            </ul>
+
+            <h3>What We Offer</h3>
+            <ul>
+                <li><strong>Group Savings:</strong> Members can pool their resources to achieve common financial goals.
+                </li>
+                <li><strong>Investment Opportunities:</strong> Access to various investment options tailored to group
+                    needs.</li>
+                <li><strong>Financial Education:</strong> Workshops and resources to improve financial literacy among
+                    members.</li>
+            </ul>
+
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Community:</strong> We prioritize the needs and aspirations of our members.</li>
+                <li><strong>Integrity:</strong> We operate transparently and ethically in all our dealings.</li>
+                <li><strong>Empowerment:</strong> We empower members to take control of their financial futures.</li>
+            </ul>
+
+            <h3>Join Us</h3>
+            <p>Become a part of our community and start your journey towards financial empowerment today! For more
+                information, please <a href="home.html">contact us</a> or visit our website.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saving Group Management System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
